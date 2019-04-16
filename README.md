@@ -1,5 +1,5 @@
-# Self-Adaptive Control of 
-This is the code for our paper *Global Encoding for Abstractive Summarization*, https://arxiv.org/abs/1805.03989
+# Self-Adaptive Control of Temperature
+This is the code for our paper *Learning When to Concentrate or Divert Attention: Self-Adaptive Attention Temperature for Neural Machine Translation*, https://www.aclweb.org/anthology/papers/D/D18/D18-1331/
 
 ***********************************************************
 
@@ -9,10 +9,6 @@ This is the code for our paper *Global Encoding for Abstractive Summarization*, 
 * Pytorch >= 0.4
 * pyrouge
 
-In order to use pyrouge, set rouge path with the line below:
-```
-pyrouge_set_rouge_path script/RELEASE-1.5.5
-```
 
 **************************************************************
 
@@ -39,12 +35,21 @@ python3 train.py -log log_name -config config_yaml -gpus id -restore checkpoint 
 *******************************************************************
 
 # Citation
-If you use this code for your research, please cite the paper this code is based on: <a href="https://arxiv.org/abs/1805.03989">Global Encoding for Abstractive Summarization</a>:.
+If you use this code for your research, please cite the paper this code is based on: <a href="https://www.aclweb.org/anthology/papers/D/D18/D18-1331/">Learning When to Concentrate or Divert Attention: Self-Adaptive Attention Temperature for Neural Machine Translation</a>:.
 ```
-@inproceedings{globalencoding,
-  title     = {Global Encoding for Abstractive Summarization},
-  author    = {Junyang Lin and Xu Sun and Shuming Ma and Qi Su},
-  booktitle = {{ACL} 2018},
-  year      = {2018}
+@inproceedings{SACT,
+    title = "Learning When to Concentrate or Divert Attention: Self-Adaptive Attention Temperature for Neural Machine Translation",
+    author = "Lin, Junyang  and
+      Sun, Xu  and
+      Ren, Xuancheng  and
+      Li, Muyu  and
+      Su, Qi",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D18-1331",
+    pages = "2985--2990"
 }
 ```
